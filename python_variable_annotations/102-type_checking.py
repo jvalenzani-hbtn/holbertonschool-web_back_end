@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Type Checking"""
-from typing import Tuple, List, Any, Union
+from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
@@ -10,3 +10,10 @@ def zoom_array(lst: Tuple, factor: int = 2) -> List:
         for i in range(factor)
     ]
     return zoomed_in
+
+
+array: Tuple = (12, 72, 91)
+
+zoom_2x: List = zoom_array(array)
+
+zoom_3x: List = zoom_array(array, 3)
