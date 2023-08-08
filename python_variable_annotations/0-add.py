@@ -1,4 +1,4 @@
 #!/usr/bin/env python3
 
-def add(a: int, b: int) -> float:
+def add(a: float, b: float) -> float:
   return a + b
